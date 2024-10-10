@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML drop down menu</title>
+<style>
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.drop
+{
+    display:flex;
+    list-style-type:none;
+    justify-content: center;
+    margin-top: 100px;
+}
+a
+{
+    display:block;
+    width:200px;
+    background-color: black;
+    color:white;
+    padding:10px;
+    text-decoration: none;
+    list-style-type:none;
+    font-size: 30px;
+    text-align: center;
+    
+}
+a:hover 
+{
+    background-color: rgb(255, 0, 0);
+}
+.product
+{
+    list-style-type: none;
+    display:none;
+}
+.drop li:nth-child(2):hover .product
+{
+    display:block;
+}
+.guide
+{
+    list-style-type:none;
+    transform:translateX(200px)translateY(-57px);
+    position:absolute;
+    display:none;
+    
+}
+.product li:nth-child(4):hover .guide
+{
+   display:block;
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body style="background-color: rgb(60, 255, 0);">
+
+    <div class="container">
+    <ul class="drop">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PRODUCTS</a>
+        <ul class="product">
+            <li><a href="#">Pen</a></li>
+            <li><a href="#">Note</a></li>
+            <li><a href="#">Record</a></li>
+            <li><a href="#">Guide</a>
+            <ul class="guide">
+
+                <li><a href="#">Don</a></li>
+                <li><a href="#">Sura</a></li>
+                <li><a href="#">Way to Success</a></li>
+
+            </ul>
+            </li>
+            <li><a href="#">To Do List</a></li>
+        </ul>
+        </li>
+
+        <li><a href="#">SHIPPING</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">HELP</a></li>
+    </ul>
+    </div>
+        
+
+</body>
+</html>
